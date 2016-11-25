@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/style.css"/>
         <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/bootstrap.css"/>
         <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/animate.css"/>
 
         <script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.js"></script>
         <script type="text/javascript" src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
@@ -21,14 +22,14 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span> 
 					</button>
-					<a class="navbar-brand" href="<?php echo site_url();?>" >
+					<a class="navbar-brand" href="<?php echo site_url();?>Main" >
                         <img src="<?php echo base_url();?>assets/img/logo_COT.png" title="Yagu Indonesia"/>
                     </a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="<?php echo site_url();?>"> Beranda </a></li>
-                        <li><a href="<?php echo site_url(); ?>"> Tentang Kami </a></li>
+						<li><a href="<?php echo site_url();?>Main"> Beranda </a></li>
+                        <li><a href="<?php echo site_url();?>Tentang_kami"> Tentang Kami </a></li>
 					</ul>
 				</div>
 				<div class="clear"></div>

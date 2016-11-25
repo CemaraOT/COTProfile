@@ -5,10 +5,12 @@
 <div class="clearfix"></div>
 <div class="content-page">
     <div class="jumbotron-v2 text-center">
-        <h1>COT | We're hearing</h1><br/>
-        <p>Layanan pembuatan aplikasi terbaik dengan biaya rendah</p><br/>
+		<br/>
+        <h1>COT | We're hearing</h1>
+        <h3>Layanan pembuatan aplikasi terbaik dengan biaya rendah</h3><br/>
         <br/>
         <br/>
+		<!--
         <div class="row text-center">
             <div class="col-lg-4 hidden-xs"></div>
             <div class="col-lg-2 col-xs-6">
@@ -22,6 +24,7 @@
             </div>
             <div class="col-lg-2 hidden-xs"></div>
         </div>
+		-->
     </div>
     <div class="contain-page">
         <div class="container">
