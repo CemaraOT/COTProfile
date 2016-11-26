@@ -8,7 +8,7 @@
         }
 		
         public function index(){
-			$this->load->view("Hubungi_kami");
+			$this->load->view("hubungi_kami");
             $this->load->view("common/footer");
 		}
 	}

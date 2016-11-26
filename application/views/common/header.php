@@ -34,9 +34,9 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li <?php if($this->uri->segment(1) == 'Main' || $this->uri->segment(1) == '') { echo 'class="active"'; } ?>><a href="<?php echo site_url();?>Main"> Beranda </a></li>
-                        <li <?php if($this->uri->segment(1) == 'Tentang_kami') { echo 'class="active"'; } ?>><a href="<?php echo site_url();?>Tentang_kami"> Tentang Kami </a></li>
-                        <li <?php if($this->uri->segment(1) == 'Hubungi_kami') { echo 'class="active"'; } ?>><a href="<?php echo site_url();?>Hubungi_kami"> Hubungi Kami </a></li>
+						<li <?php if($this->uri->segment(1) == 'main' || $this->uri->segment(1) == '') { echo 'class="active"'; } ?>><a href="<?php echo site_url();?>main"> Beranda </a></li>
+                        <li <?php if($this->uri->segment(1) == 'tentang_kami') { echo 'class="active"'; } ?>><a href="<?php echo site_url();?>tentang_kami"> Tentang Kami </a></li>
+                        <li <?php if($this->uri->segment(1) == 'hubungi_kami') { echo 'class="active"'; } ?>><a href="<?php echo site_url();?>hubungi_kami"> Hubungi Kami </a></li>
 					</ul>
 				</div>
 				<div class="clear"></div>
