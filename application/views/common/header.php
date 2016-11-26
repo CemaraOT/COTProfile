@@ -13,6 +13,12 @@
         <script type="text/javascript" src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
 		<link rel="shortcut icon" href="<?php echo base_url();?>assets/img/ico_COT.png"/>
 	</head>
+	<style type="text/css">
+		li.active a
+		{
+			color:#A1C42A;
+		}
+	</style>
 	<body>
 		<nav class="navbar" id="main_head">
 			<div class="container">
@@ -28,8 +34,9 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="<?php echo site_url();?>Main"> Beranda </a></li>
-                        <li><a href="<?php echo site_url();?>Tentang_kami"> Tentang Kami </a></li>
+						<li <?php if($this->uri->segment(1) == 'Main' || $this->uri->segment(1) == '') { echo 'class="active"'; } ?>><a href="<?php echo site_url();?>Main"> Beranda </a></li>
+                        <li <?php if($this->uri->segment(1) == 'Tentang_kami') { echo 'class="active"'; } ?>><a href="<?php echo site_url();?>Tentang_kami"> Tentang Kami </a></li>
+                        <li <?php if($this->uri->segment(1) == 'Hubungi_kami') { echo 'class="active"'; } ?>><a href="<?php echo site_url();?>Hubungi_kami"> Hubungi Kami </a></li>
 					</ul>
 				</div>
 				<div class="clear"></div>
