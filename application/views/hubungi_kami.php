@@ -30,12 +30,27 @@
         <div class="container">
 			<hr class="featurette-divider"/>
 			<div class="row featurette" >
-				<div class="col-md-5 text-center">
-					<img class="featurette-image center-block" src="<?php echo base_url();?>assets/img/maps.png" alt="Map" width="650px" />
-                    <br/>
+				<div class="col-md-6 text-center">
+					<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v2/place?q=place_id:ChIJeUS8iM3FaS4R6aNZNJjqVRg&key=AIzaSyBg_NinQ3SZev4JI-ttdon91nso5G2hjz0" allowfullscreen></iframe>
                 </div>
-                <div class="col-md-7 text-center">
-                    
+                <div class="col-md-6">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label>Nama : </label>
+                            <input type="text" name="nama" placeholder="Tuliskan nama anda" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email : </label>
+                            <input type="email" name="email" placeholder="tuliskan email anda" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Isi Pesan : </label>
+                            <textarea class="form-control" placeholder="Tuliskan pesan anda" name="pesan" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="button" value="Kirim" class="btn btn-primary">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
