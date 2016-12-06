@@ -11,5 +11,12 @@
 			$this->load->view("hubungi_kami");
             $this->load->view("common/footer");
 		}
+
+		public function submit(){
+			$data = array('nama'=>$this->input->post('nama'),
+						'email'=>$this->input->post('email'),
+						'pesan'=>$this->input->post('pesan'));
+			print_r($data);
+		}
 	}
 ?>

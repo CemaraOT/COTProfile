@@ -11,5 +11,11 @@
 			$this->load->view("main");
             $this->load->view("common/footer");
 		}
+
+		public function terms_privacy()
+		{
+			# code...
+			
+		}
 	}
 ?>

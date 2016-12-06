@@ -2,6 +2,22 @@
     <title>COT | We're hearing</title>
 </head>
 <?php $this->load->view("common/header");?>
+<script>
+      function initMap() {
+        var uluru = {lat: -6.591834, lng: 106.808897};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg_NinQ3SZev4JI-ttdon91nso5G2hjz0&callback=initMap">
+    </script>
 <div class="clearfix"></div>
 <div class="content-page">
     <div class="jumbotron-v2 text-center">
@@ -31,10 +47,10 @@
 			<hr class="featurette-divider"/>
 			<div class="row featurette" >
 				<div class="col-md-6 text-center">
-					<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v2/place?q=place_id:ChIJeUS8iM3FaS4R6aNZNJjqVRg&key=AIzaSyBg_NinQ3SZev4JI-ttdon91nso5G2hjz0" allowfullscreen></iframe>
+					<div id="map" width="600" height="450" frameborder="0" style="border:0"  allowfullscreen></div>
                 </div>
                 <div class="col-md-6">
-                    <form action="" method="post">
+                    <form action="<?php echo base_url();?>Hubungi_kami/submit" method="post">
                         <div class="form-group">
                             <label>Nama : </label>
                             <input type="text" name="nama" placeholder="Tuliskan nama anda" class="form-control" required>
@@ -48,7 +64,7 @@
                             <textarea class="form-control" placeholder="Tuliskan pesan anda" name="pesan" required></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="button" value="Kirim" class="btn btn-primary">
+                            <input type="submit" value="Kirim" class="btn btn-primary">
                         </div>
                     </form>
                 </div>
