@@ -9,27 +9,44 @@
 }
 
 body{
-    background-image: url("../img/bannerCOT1.jpg");
+    background: url("../img/bannerCOT3.jpg") fixed;
+    background-size: cover;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .content-page{
-    height: 85%;
-    overflow: auto;
+    /*height: 100%;*/
+    /*overflow: auto;*/
+    background-color: rgba(0,0,0,0.5);
 }
 
-.navbar {
-    margin-bottom: 10px;
-    padding-top: 10px;
+nav#header {
+    margin-bottom: 0;
+    padding: 10px 5px;
     border: 0;
     border-radius: 0;
     font-size: 15px;
     letter-spacing: 1px;
+    background-color: rgba(0,0,0,0.8);
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 .icon-bar{
 	background-color:#0A87BB;
+}
+
+#header.affix {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 5px 5px;
+    box-shadow : 1px 2px 3px 0 #0A87BB;
+    background-color: rgba(0,0,0,0.8);
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 .navbar-header img {
@@ -44,9 +61,12 @@ body{
 }
 
 .navbar-nav li a:hover {
-    color: #A1C42A !important;
+    color: #FFFFFF !important;
 }
 
+.navbar-nav li :hover {
+    background-color: rgba(0,0,0,0.5) !important;
+}
 
 .navbar-toggle > .icon-bar {
 	background-color:#A1C42A !important;
@@ -57,6 +77,14 @@ body{
     padding: 30px 30px;
     color: inherit;
     background-color: rgba(0,0,0,0);
+    -webkit-animation: fadein 1s;
+    animation: fadein 1s;
+}
+.jumbotron-v2 .content{
+    background-color: rgba(0,0,0,0.5);
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 35px;
 }
 .jumbotron-v2 p {
     margin-bottom: 15px;
@@ -74,7 +102,7 @@ body{
 }
 @media screen and (min-width: 768px) {
     .jumbotron-v2 {
-        padding-top: 80px;
+        padding-top: 60px;
         padding-bottom: 50px;
     }
     .container .jumbotron-v2 {
@@ -117,7 +145,12 @@ body{
 }
 
 .jumbotron-v2 h1{
-	color:#0A87BB;
+	color:#FFFFFF;
+    font-weight: bold;
+}
+
+.jumbotron-v2 h3{
+    color:#0A87BB;
 }
 
 .contain-page{
@@ -165,9 +198,45 @@ body{
 	background-color: #0a2b3d;
 	color:#f5f5f5;
 	padding:5px 20px 5px 20px;
-    bottom: 0;
 }
 
 .text-bold{
     font-weight: bold;
+}
+
+@-webkit-keyframes ease-in {
+    from {height: 70px;}
+    to {height: 50px;}
+}
+
+@keyframes ease-in {
+    from {height: 70px;}
+    to {height: 50px;}
+}
+
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes color-trans-fill {
+    100% {background-color: rgba(0,0,0,0.9);}
+}
+@keyframes color-trans-zero {
+    100% {background-color: rgba(0,0,0,0.75);}
 }
